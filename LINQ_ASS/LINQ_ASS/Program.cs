@@ -47,7 +47,7 @@
             var query = lINQ.seedata().Where(x => x.ProductName.Contains("a"));
             foreach (var data in query)
             {
-                Console.WriteLine($"{data.ProductID} {data.ProductName} {data.Brand} {data.Quantity} {data.Price}");
+                Console.WriteLine($"{data.ProductID,-5} {data.ProductName,-10} {data.Brand,-10} {data.Quantity,-5} {data.Price}");
             }
             Console.WriteLine();
 
@@ -55,7 +55,7 @@
             var query1 = lINQ.seedata().OrderBy(x => x.ProductName);
             foreach (var data in query1)
             {
-                Console.WriteLine($"{data.ProductID} {data.ProductName} {data.Brand} {data.Quantity} {data.Price}");
+                Console.WriteLine($"{data.ProductID,-5} {data.ProductName,-10} {data.Brand,-10} {data.Quantity,-5} {data.Price}");
             }
             Console.WriteLine();
 
